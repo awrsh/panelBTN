@@ -1,0 +1,71 @@
+.helper-fontsize{
+  font-size: small;
+}
+.helper-btn{
+  border-radius: 25px;
+}
+
+
+
+
+.info-list{
+  margin-bottom: 16px;
+  font-family: 'IRANYekanWebFn';
+  font-size: 14px;
+  font-weight: 300;
+  align-items: center;
+}
+
+@media all and (min-width:992px){
+  .content-dashboard{
+    padding-top:32px;
+    padding-bottom:20px;
+    padding-left:32px;
+    padding-right:32px;
+  }
+  .form-button{
+    padding-top: 10px;
+    padding-bottom: 5% !important;
+  }
+  .info-content{
+    padding-top: 45px;
+    padding-bottom: 30px;
+    padding-left:32px;
+    padding-right:32px;
+   }
+}
+
+@media all and (min-width:768px){
+  .form-button{
+    padding-top: 21px;
+    padding-bottom: 24px !important;
+
+  }
+ 
+  .info-content{
+    padding-top: 45px;
+    padding-bottom: 30px;
+    padding-left:32px;
+    padding-right:32px;
+   }
+ 
+}
+
+@media all and (max-width:768px){
+  .borderbottom-margin {
+    border-bottom: 1px solid #cbe4eb;
+    margin-top: 32px;
+  }
+  .content-dashboard{
+    padding-top:32px;
+    padding-bottom:20px;
+    padding-left:16px;
+    padding-right:16px;
+  }
+  .info-content{
+    padding-top: 45px;
+    padding-bottom: 30px;
+    padding-left:16px;
+    padding-right:16px;  
+   }
+}

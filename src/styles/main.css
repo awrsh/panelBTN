@@ -1,0 +1,224 @@
+html,
+body {
+  font-family: "PeydaWeb" !important;
+  font-weight: normal !important;
+}
+[class^="Mui"],
+[class^="Mui"] * {
+  font-family: "PeydaWeb" !important;
+}
+[class*="Mui"],
+[class*="Mui"] * {
+  font-family: "PeydaWeb" !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PeydaWeb-Bold" !important;
+}
+.px-32 {
+  padding-inline: 32px !important;
+} 
+
+.px-24 {
+  padding-top: 24px !important;
+}
+
+hr {
+  flex-grow: 1;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-top: 1px dashed #cbe4eb;
+  opacity: 1;
+}
+.border-1px {
+  border: 1px solid #424bfb !important;
+}
+.boxShadowUnset {
+  box-shadow: none !important;
+}
+.maincontent {
+  padding-top: "32px";
+}
+
+.bordertop {
+  border-top: 1px solid #cbe4eb;
+}
+
+.bordertop-bold {
+  border-top: 2px solid #a4a6b4;
+}
+
+.borderbottom {
+  border-bottom: 1px solid #cbe4eb;
+}
+.borderbottom-bold {
+  border-bottom: 2px solid #a4a6b4;
+}
+
+.border-left {
+  border-left: 1px solid #a4a6b4;
+}
+.border-left-bold {
+  border-left: 2px solid #a4a6b4;
+}
+
+.border-right {
+  border-right: 1px solid #cbe4eb;
+}
+.border-right-bold {
+  border-right: 1px solid #a4a6b4;
+}
+.border-right-margin {
+  border-right: 1px solid #cbe4eb;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+
+.border-right-marginboldblue {
+  border-right: 2px solid #424bfb;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.full-border {
+  border: 1px solid #cbe4eb;
+}
+
+.full-border-active {
+  border: 1px solid #0642df;
+}
+
+.infmargin {
+  padding-left: "10%";
+}
+
+.bg-card-img {
+  background-image: url("../img//icons/cart-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+div.boxdate {
+  border: 1px solid #cbe4eb;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+}
+div.boxdate:active,
+div.boxdate:focus {
+  border: 2px solid #cbe4eb;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+}
+div.boxdate:hover {
+  border: 1px solid rgb(31, 31, 31);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .border-left-d {
+    border-left: 1px solid #cbe4eb;
+    height:auto;
+  }
+  .p-info {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .slidbox {
+    margin-top: 90px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .p-info {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.bgw .bgw:hover {
+  background-color: #fff;
+}
+
+.MuiButtonBase-root.MuiMenuItem-root {
+  min-height: auto;
+  direction: rtl;
+
+}
+
+.boldfont {
+  font-family: "PeydaWebBold" !important;
+  font-weight: normal !important;
+  font-size: 18px ;
+}
+
+.MuiTabs-flexContainer{
+  border-bottom: 1px solid #cbe4eb;
+}
+
+/* .MuiList-root.MuiMenu-list{
+  box-shadow: unset !important;
+  border: 1px solid #cbe4eb;
+  border-radius: 8px;
+} */
+.MuiPaper-root.MuiMenu-paper.MuiPaper-root.MuiPopover-paper{
+  margin-top: 3px;
+  box-shadow: unset !important;
+  border: 2px solid #cbe4eb;
+  border-radius: 8px;
+}
+
+
+.MuiFormControlLabel-root .MuiFormControlLabel-label {
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.MuiList-root{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.titlemindialog{
+  padding-right: 12px;
+  font-size: 14 !important;
+  font-family: "PeydaWebBold" !important;
+  font-weight: bold !important;
+}
+
+.titlemini{
+  margin-bottom: 16px;
+}
+.MuiFormLabel-root{
+  margin-bottom: 12px;
+}
+
+
+.boldfont-dialog{
+  font-family: "PeydaWebBold" !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+
+}
+.dialog-title-container{
+  padding-inline: 24px!important;
+}
+
+.inputfont{
+  font-size: 14px !important;
+}
