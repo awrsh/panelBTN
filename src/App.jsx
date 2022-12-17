@@ -141,59 +141,59 @@ function App() {
               <CoinList/>
             </PrivateRoute>
           }/>
-           <Route path="/crypto/deposit" element={
+           <Route path="/panelBTN/crypto/deposit" element={
             <PrivateRoute>
               <Deposit/>
             </PrivateRoute>
           }/>
-           <Route path="/crypto/withdraw" element={
+           <Route path="/panelBTN/crypto/withdraw" element={
             <PrivateRoute>
               <Withdraw/>
             </PrivateRoute>
           }/>
-           <Route path="/dashboard-panel" element={
+           <Route path="/panelBTN/dashboard-panel" element={
             <PrivateRoute>
               <DashboardPanel/>
             </PrivateRoute>
           }/>
-           <Route path="/referal-managment" element={
+           <Route path="/panelBTN/referal-managment" element={
             <PrivateRoute>
               <ReferalManagment/>
             </PrivateRoute>
           }/>
-           <Route path="/rial/deposit" element={
+           <Route path="/panelBTN/rial/deposit" element={
             <PrivateRoute>
               <DepositRial/>
             </PrivateRoute>
           }/>
-           <Route path="/rial/withdraw" element={
+           <Route path="/panelBTN/rial/withdraw" element={
             <PrivateRoute>
               <WithdrawRial/>
             </PrivateRoute>
           }/>
-           <Route path="/trades" element={
+           <Route path="/panelBTN/trades" element={
             <PrivateRoute>
               <Trades/>
             </PrivateRoute>
           }/>
-           <Route path="/usersprofile" element={
+           <Route path="/panelBTN/usersprofile" element={
             <PrivateRoute>
               <UserProfiles/>
             </PrivateRoute>
           }/>
-           <Route path="/user-managment" element={
+           <Route path="/panelBTN/user-managment" element={
             <PrivateRoute>
               <UserManagment />
             </PrivateRoute>
           }/>
-           <Route path="/user-identity-list" element={
+           <Route path="/panelBTN/user-identity-list" element={
             <PrivateRoute>
               <UserIdentityList />
             </PrivateRoute>
           }/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/register" element={<Register/>}/>
-          <Route path="/confirm" element={<Confirm/>}/>
+          <Route path="/panelBTN/login" element={<Login/>}/>
+          <Route path="/panelBTN/register" element={<Register/>}/>
+          <Route path="/panelBTN/confirm" element={<Confirm/>}/>
         </Routes>
         </BrowserRouter>
       </ThemeProvider>
