@@ -55,149 +55,152 @@ const cacheRtl = createCache({
 function App() {
 
   return (
-    <CacheProvider value={cacheRtl}>
-      <ThemeProvider theme={textTheme}>
-        <BrowserRouter>
-        <Routes>
+    <h1>tesststststts</h1>
+    // <CacheProvider value={cacheRtl}>
+    //   <ThemeProvider theme={textTheme}>
+    //     <BrowserRouter>
+    //     <Routes>
 
-          <Route path="/panelBTN/buy"  element={
-            <PrivateRoute>
-              <Dashboard/>
-            </PrivateRoute>
-          } />
-          <Route path="/panelBTN" exact element={
-            <h1>tststsststststststtstsststs</h1>
-          } />
-         <Route path="/panelBTN/payment" exact element={
-              <Payment/>
-          } />
-          <Route path="/panelBTN/transactions" element={
-            <PrivateRoute>
-              <Transaction/>
-            </PrivateRoute>
-          } />
-          <Route path="/panelBTN/bankaccount" element={
-            <PrivateRoute>
-              <BankAccount/>
-            </PrivateRoute>
-          } />  
-          <Route path="/panelBTN/wallet" element={
-            <PrivateRoute>
-              <Wallet/>
-            </PrivateRoute>
-          } />  
-          <Route path="/panelBTN/orderhistory" element={
-            <PrivateRoute>
-              <OrderHistory/>
-            </PrivateRoute>
-          } />  
-          <Route path="/panelBTN/verification" element={
-            <PrivateRoute>
-              <Verification/>
-            </PrivateRoute>
-          }/>
-          <Route path="/panelBTN/verification/info" element={
-            <PrivateRoute>
-              <Verification stepNumber={0}/>
-            </PrivateRoute>
-          }/>
-          <Route path="/panelBTN/verification/rule" element={
-            <PrivateRoute>
-              <Verification stepNumber={1}/>
-            </PrivateRoute>
-          }/>
-          <Route path="/panelBTN/verification/document" element={
-            <PrivateRoute>
-              <Verification stepNumber={2}/>
-            </PrivateRoute>
-          }/>
-          <Route path="/panelBTN/referral" element={
-            <PrivateRoute>
-              <Referral/>
-            </PrivateRoute>
-          }/>
-          <Route path="/panelBTN/send-to-user" element={
-            <PrivateRoute>
-              <SendUser/>
-            </PrivateRoute>
-          }/>
-          <Route path="/panelBTN/send-to-user/history" element={
-            <PrivateRoute>
-              <SenduserHistory/>
-            </PrivateRoute>
-          }/>
-           <Route path="/panelBTN/price-managment" element={
-            <PrivateRoute>
-              <PriceManagment/>
-            </PrivateRoute>
-          }/>
-           <Route path="/panelBTN/confirm-transaction" element={
-            <PrivateRoute>
-              <ConfirmTransaction/>
-            </PrivateRoute>
-          }/>
-           <Route path="/panelBTN/coin-list" element={
-            <PrivateRoute>
-              <CoinList/>
-            </PrivateRoute>
-          }/>
-           <Route path="/panelBTN/crypto/deposit" element={
-            <PrivateRoute>
-              <Deposit/>
-            </PrivateRoute>
-          }/>
-           <Route path="/panelBTN/crypto/withdraw" element={
-            <PrivateRoute>
-              <Withdraw/>
-            </PrivateRoute>
-          }/>
-           <Route path="/panelBTN/dashboard-panel" element={
-            <PrivateRoute>
-              <DashboardPanel/>
-            </PrivateRoute>
-          }/>
-           <Route path="/panelBTN/referal-managment" element={
-            <PrivateRoute>
-              <ReferalManagment/>
-            </PrivateRoute>
-          }/>
-           <Route path="/panelBTN/rial/deposit" element={
-            <PrivateRoute>
-              <DepositRial/>
-            </PrivateRoute>
-          }/>
-           <Route path="/panelBTN/rial/withdraw" element={
-            <PrivateRoute>
-              <WithdrawRial/>
-            </PrivateRoute>
-          }/>
-           <Route path="/panelBTN/trades" element={
-            <PrivateRoute>
-              <Trades/>
-            </PrivateRoute>
-          }/>
-           <Route path="/panelBTN/usersprofile" element={
-            <PrivateRoute>
-              <UserProfiles/>
-            </PrivateRoute>
-          }/>
-           <Route path="/panelBTN/user-managment" element={
-            <PrivateRoute>
-              <UserManagment />
-            </PrivateRoute>
-          }/>
-           <Route path="/panelBTN/user-identity-list" element={
-            <PrivateRoute>
-              <UserIdentityList />
-            </PrivateRoute>
-          }/>
-          <Route path="/panelBTN/login" element={<Login/>}/>
-          <Route path="/panelBTN/register" element={<Register/>}/>
-          <Route path="/panelBTN/confirm" element={<Confirm/>}/>
-        </Routes>
-        </BrowserRouter>
-      </ThemeProvider>
-    </CacheProvider>
+    //       <Route path="/panelBTN/buy"  element={
+    //         <PrivateRoute>
+    //           <Dashboard/>
+    //         </PrivateRoute>
+    //       } />
+    //       <Route path="/panelBTN" exact element={
+    //         <PrivateRoute>
+    //           <MainDashboard/>
+    //         </PrivateRoute>
+    //       } />
+    //      <Route path="/panelBTN/payment" exact element={
+    //           <Payment/>
+    //       } />
+    //       <Route path="/panelBTN/transactions" element={
+    //         <PrivateRoute>
+    //           <Transaction/>
+    //         </PrivateRoute>
+    //       } />
+    //       <Route path="/panelBTN/bankaccount" element={
+    //         <PrivateRoute>
+    //           <BankAccount/>
+    //         </PrivateRoute>
+    //       } />  
+    //       <Route path="/panelBTN/wallet" element={
+    //         <PrivateRoute>
+    //           <Wallet/>
+    //         </PrivateRoute>
+    //       } />  
+    //       <Route path="/panelBTN/orderhistory" element={
+    //         <PrivateRoute>
+    //           <OrderHistory/>
+    //         </PrivateRoute>
+    //       } />  
+    //       <Route path="/panelBTN/verification" element={
+    //         <PrivateRoute>
+    //           <Verification/>
+    //         </PrivateRoute>
+    //       }/>
+    //       <Route path="/panelBTN/verification/info" element={
+    //         <PrivateRoute>
+    //           <Verification stepNumber={0}/>
+    //         </PrivateRoute>
+    //       }/>
+    //       <Route path="/panelBTN/verification/rule" element={
+    //         <PrivateRoute>
+    //           <Verification stepNumber={1}/>
+    //         </PrivateRoute>
+    //       }/>
+    //       <Route path="/panelBTN/verification/document" element={
+    //         <PrivateRoute>
+    //           <Verification stepNumber={2}/>
+    //         </PrivateRoute>
+    //       }/>
+    //       <Route path="/panelBTN/referral" element={
+    //         <PrivateRoute>
+    //           <Referral/>
+    //         </PrivateRoute>
+    //       }/>
+    //       <Route path="/panelBTN/send-to-user" element={
+    //         <PrivateRoute>
+    //           <SendUser/>
+    //         </PrivateRoute>
+    //       }/>
+    //       <Route path="/panelBTN/send-to-user/history" element={
+    //         <PrivateRoute>
+    //           <SenduserHistory/>
+    //         </PrivateRoute>
+    //       }/>
+    //        <Route path="/panelBTN/price-managment" element={
+    //         <PrivateRoute>
+    //           <PriceManagment/>
+    //         </PrivateRoute>
+    //       }/>
+    //        <Route path="/panelBTN/confirm-transaction" element={
+    //         <PrivateRoute>
+    //           <ConfirmTransaction/>
+    //         </PrivateRoute>
+    //       }/>
+    //        <Route path="/panelBTN/coin-list" element={
+    //         <PrivateRoute>
+    //           <CoinList/>
+    //         </PrivateRoute>
+    //       }/>
+    //        <Route path="/crypto/deposit" element={
+    //         <PrivateRoute>
+    //           <Deposit/>
+    //         </PrivateRoute>
+    //       }/>
+    //        <Route path="/crypto/withdraw" element={
+    //         <PrivateRoute>
+    //           <Withdraw/>
+    //         </PrivateRoute>
+    //       }/>
+    //        <Route path="/dashboard-panel" element={
+    //         <PrivateRoute>
+    //           <DashboardPanel/>
+    //         </PrivateRoute>
+    //       }/>
+    //        <Route path="/referal-managment" element={
+    //         <PrivateRoute>
+    //           <ReferalManagment/>
+    //         </PrivateRoute>
+    //       }/>
+    //        <Route path="/rial/deposit" element={
+    //         <PrivateRoute>
+    //           <DepositRial/>
+    //         </PrivateRoute>
+    //       }/>
+    //        <Route path="/rial/withdraw" element={
+    //         <PrivateRoute>
+    //           <WithdrawRial/>
+    //         </PrivateRoute>
+    //       }/>
+    //        <Route path="/trades" element={
+    //         <PrivateRoute>
+    //           <Trades/>
+    //         </PrivateRoute>
+    //       }/>
+    //        <Route path="/usersprofile" element={
+    //         <PrivateRoute>
+    //           <UserProfiles/>
+    //         </PrivateRoute>
+    //       }/>
+    //        <Route path="/user-managment" element={
+    //         <PrivateRoute>
+    //           <UserManagment />
+    //         </PrivateRoute>
+    //       }/>
+    //        <Route path="/user-identity-list" element={
+    //         <PrivateRoute>
+    //           <UserIdentityList />
+    //         </PrivateRoute>
+    //       }/>
+    //       <Route path="/login" element={<Login/>}/>
+    //       <Route path="/register" element={<Register/>}/>
+    //       <Route path="/confirm" element={<Confirm/>}/>
+    //     </Routes>
+    //     </BrowserRouter>
+    //   </ThemeProvider>
+    // </CacheProvider>
   )
 }
 
