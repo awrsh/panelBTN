@@ -70,46 +70,26 @@ export default function PrivateRoute({ children }) {
 
     }
   }
-  return (
+
+  return (auth != null ?
     <Box>
-        <Navbar isSide={isSide} LoadSide={LoadSideDesk} LoadMobile={LoadNavMobile}/>
-             <Box style={{ marginTop: '58px' }}>
-              <div className="container-fluid">
-                <div className="row" dir="rtl">
-                  {isSide && <div className='col-lg-3 col-md-5 border-left-d' style={{minWidth:"auto",maxWidth:"312px",height:"100%",position:"fixed" }}>
-                    <div className="d-none d-sm-none d-md-block d-lg-block ">
-                      <Sidebar/>
-                    </div>
-                  </div>}
-                <div className={colClass + " col-12"} style={{minWidth:"calc(100% - 312px)",maxWidth:"100%",marginRight:"auto"}}>
-                  {children}
-                </div>
+      <Navbar isSide={isSide} LoadSide={LoadSideDesk} LoadMobile={LoadNavMobile} />
+      <Box style={{ marginTop: '58px' }}>
+        <div className="container-fluid">
+          <div className="row" dir="rtl">
+            {isSide && <div className='col-lg-3 col-md-5 border-left-d' style={{ minWidth: "auto", maxWidth: "312px", height: "100%", position: "fixed" }}>
+              <div className="d-none d-sm-none d-md-block d-lg-block ">
+                <Sidebar />
               </div>
-             </div>
-         </Box>
-         <SideMobileDialog open={isMobile} close={UnLoadMobile} />
+            </div>}
+            <div className={colClass + " col-12"} style={{ minWidth: "calc(100% - 312px)", maxWidth: "100%", marginRight: "auto" }}>
+              {children}
+            </div>
+          </div>
+        </div>
       </Box>
-    )
+      <SideMobileDialog open={isMobile} close={UnLoadMobile} />
+    </Box>
+    : <Navigate to="/login" />
+  )
   }
-  // return (auth != null ?
-  //   <Box>
-  //     <Navbar isSide={isSide} LoadSide={LoadSideDesk} LoadMobile={LoadNavMobile} />
-  //     <Box style={{ marginTop: '58px' }}>
-  //       <div className="container-fluid">
-  //         <div className="row" dir="rtl">
-  //           {isSide && <div className='col-lg-3 col-md-5 border-left-d' style={{ minWidth: "auto", maxWidth: "312px", height: "100%", position: "fixed" }}>
-  //             <div className="d-none d-sm-none d-md-block d-lg-block ">
-  //               <Sidebar />
-  //             </div>
-  //           </div>}
-  //           <div className={colClass + " col-12"} style={{ minWidth: "calc(100% - 312px)", maxWidth: "100%", marginRight: "auto" }}>
-  //             {children}
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </Box>
-  //     <SideMobileDialog open={isMobile} close={UnLoadMobile} />
-  //   </Box>
-  //   : <Navigate to="/login" />
-  // )
-  //}
