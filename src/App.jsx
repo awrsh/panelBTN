@@ -66,9 +66,7 @@ function App() {
             </PrivateRoute>
           } />
           <Route path="/panelBTN" exact element={
-            <PrivateRoute>
-              <MainDashboard/>
-            </PrivateRoute>
+            <h1>tststsststststststtstsststs</h1>
           } />
          <Route path="/panelBTN/payment" exact element={
               <Payment/>
