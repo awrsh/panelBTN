@@ -60,85 +60,85 @@ function App() {
         <BrowserRouter>
         <Routes>
 
-          <Route path="/buy"  element={
+          <Route path="/panelBTN/buy"  element={
             <PrivateRoute>
               <Dashboard/>
             </PrivateRoute>
           } />
-          <Route path="/" exact element={
+          <Route path="/panelBTN" exact element={
             <PrivateRoute>
               <MainDashboard/>
             </PrivateRoute>
           } />
-         <Route path="/payment" exact element={
+         <Route path="/panelBTN/payment" exact element={
               <Payment/>
           } />
-          <Route path="/transactions" element={
+          <Route path="/panelBTN/transactions" element={
             <PrivateRoute>
               <Transaction/>
             </PrivateRoute>
           } />
-          <Route path="/bankaccount" element={
+          <Route path="/panelBTN/bankaccount" element={
             <PrivateRoute>
               <BankAccount/>
             </PrivateRoute>
           } />  
-          <Route path="/wallet" element={
+          <Route path="/panelBTN/wallet" element={
             <PrivateRoute>
               <Wallet/>
             </PrivateRoute>
           } />  
-          <Route path="/orderhistory" element={
+          <Route path="/panelBTN/orderhistory" element={
             <PrivateRoute>
               <OrderHistory/>
             </PrivateRoute>
           } />  
-          <Route path="/verification" element={
+          <Route path="/panelBTN/verification" element={
             <PrivateRoute>
               <Verification/>
             </PrivateRoute>
           }/>
-          <Route path="/verification/info" element={
+          <Route path="/panelBTN/verification/info" element={
             <PrivateRoute>
               <Verification stepNumber={0}/>
             </PrivateRoute>
           }/>
-          <Route path="/verification/rule" element={
+          <Route path="/panelBTN/verification/rule" element={
             <PrivateRoute>
               <Verification stepNumber={1}/>
             </PrivateRoute>
           }/>
-          <Route path="/verification/document" element={
+          <Route path="/panelBTN/verification/document" element={
             <PrivateRoute>
               <Verification stepNumber={2}/>
             </PrivateRoute>
           }/>
-          <Route path="/referral" element={
+          <Route path="/panelBTN/referral" element={
             <PrivateRoute>
               <Referral/>
             </PrivateRoute>
           }/>
-          <Route path="/send-to-user" element={
+          <Route path="/panelBTN/send-to-user" element={
             <PrivateRoute>
               <SendUser/>
             </PrivateRoute>
           }/>
-          <Route path="/send-to-user/history" element={
+          <Route path="/panelBTN/send-to-user/history" element={
             <PrivateRoute>
               <SenduserHistory/>
             </PrivateRoute>
           }/>
-           <Route path="/price-managment" element={
+           <Route path="/panelBTN/price-managment" element={
             <PrivateRoute>
               <PriceManagment/>
             </PrivateRoute>
           }/>
-           <Route path="/confirm-transaction" element={
+           <Route path="/panelBTN/confirm-transaction" element={
             <PrivateRoute>
               <ConfirmTransaction/>
             </PrivateRoute>
           }/>
-           <Route path="/coin-list" element={
+           <Route path="/panelBTN/coin-list" element={
             <PrivateRoute>
               <CoinList/>
             </PrivateRoute>
